@@ -1,0 +1,5 @@
+# Local Claude Code settings (machine-specific, may contain command history)
+.claude/settings.local.json
+
+# macOS folder metadata
+.DS_Store

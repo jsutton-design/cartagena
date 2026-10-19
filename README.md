@@ -22,8 +22,26 @@ The app puts everything the group needed in one place, organized around four que
 - **Clear information hierarchy** across titles, headings, subheadings and body text.
 - **Design tokens for light and dark modes.** Colors are defined once and reused, so both themes stay consistent.
 - **Consistent action colors.** Gold always means a primary action and blue a secondary one. Information is never styled to look tappable.
-- **Accessibility:** designed to meet WCAG 2.1 AA for color contrast, touch target size and screen reader labels.
+- **Accessibility:** audited against WCAG 2.1 AA in light and dark modes (see below).
 - **Works offline.** Boat days and airport arrivals often have no signal, so the app saves itself on the phone after the first visit.
+
+## Accessibility audit
+
+After the trip, I audited the app against WCAG 2.1 AA in both themes. I measured the contrast of every text element, every control border and every tap target in the browser, tested keyboard navigation, and then checked the fixes on an iPhone with VoiceOver.
+
+**What held up:** every text element passed contrast in normal use, every icon and control had a screen reader label, headings followed a clean outline, and the layout worked at 320px wide with zoom allowed.
+
+**What I fixed:**
+
+- **Checked-off items.** Ticked items faded to 60% opacity, which dropped their text, including the still-working Call and Maps buttons, to as low as 2.4:1. I explored three alternatives and chose a compact style: done items collapse to their time and a crossed-out title in a gray that still passes (5.1:1 light, 5.8:1 dark), while place buttons stay at full strength. Less clutter, and nothing drops below the contrast minimum.
+- **Contrast.** The selected day's number in dark mode was white on gold (1.47:1). It now uses the same dark ink as the rest of the chip. Text field borders and one placeholder were raised to meet minimums using existing color tokens.
+- **Tap targets.** The 22px checkboxes and 38px buttons now have 44px tap areas without changing their visible size.
+- **Keyboard focus.** The tab bar and day chips now show the same gold focus ring as every other control.
+- **Screen readers.**
+  - Spanish phrases are marked as Spanish, so VoiceOver reads them with a Spanish voice.
+  - The 108 checkboxes name their item ("Mark done: Melissa and Kevin land") instead of all saying "Mark done."
+  - "Saved" and "Copied" confirmations are announced.
+  - The theme button says which mode is on.
 
 ## How it's built
 

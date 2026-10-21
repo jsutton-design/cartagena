@@ -1,6 +1,6 @@
 # Cartagena Trip App
 
-A mobile web app built for a group trip to Cartagena, Colombia (August 17–24, 2026). 23 people were on the trip, and 20 of them downloaded and used the app on their iPhones.
+A mobile web app built for a group trip to Cartagena, Colombia (August 17–24, 2026). 23 people were on the trip, and 20 of them downloaded and used the app on their phones.
 
 **Live app:** https://jsutton-design.github.io/cartagena/
 Best viewed on a phone. On an iPhone, open it in Safari and choose **Share → Add to Home Screen** to use it like an installed app.

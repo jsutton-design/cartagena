@@ -45,6 +45,7 @@ After the trip, I audited the app against WCAG 2.1 AA in both themes. I measured
   - The 108 checkboxes name their item ("Mark done: Melissa and Kevin land") instead of all saying "Mark done."
   - "Saved" and "Copied" confirmations are announced.
   - The theme button says which mode is on.
+  - The tab bar and day chips have clear names ("Places tab," "Mon Aug 17, Arrival"). Some had been announced as just "on," or with another button's text.
 
 ## How it's built
 

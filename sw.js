@@ -1,6 +1,6 @@
 /* Cartagena trip app - offline cache */
-/* build 5499c1a6eb - changing this string is what makes iOS fetch the new version */
-const C='ctg-5499c1a6eb';
+/* build a4a6dbed3c - changing this string is what makes iOS fetch the new version */
+const C='ctg-a4a6dbed3c';
 const ASSETS=['./','./index.html','./manifest.json','./icon.svg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});

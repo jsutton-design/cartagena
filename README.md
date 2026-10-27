@@ -1,9 +1,12 @@
 # Cartagena Trip App
 
-A mobile web app built for a group trip to Cartagena, Colombia (August 17–24, 2026). 23 people were on the trip, and 20 of them downloaded and used the app on their iPhones.
+A mobile web app built for a group trip to Cartagena, Colombia (August 17–24, 2026). 23 people were on the trip, and 20 of them downloaded and used the app on their phones.
 
 **Live app:** https://jsutton-design.github.io/cartagena/
-Best viewed on a phone. On an iPhone, open it in Safari and choose **Share → Add to Home Screen** to use it like an installed app.
+Built for any phone, and best viewed on one. To use it like an installed app, add it to your home screen:
+
+- **iPhone:** open it in Safari and choose **Share → Add to Home Screen**.
+- **Android:** open it in Chrome and choose **⋮ → Add to Home screen** (on some phones, **Install app**).
 
 ## What it does
 
@@ -47,7 +50,7 @@ After the trip, I audited the app against WCAG 2.1 AA in both themes. I measured
 
 - `index.html`: the entire app (HTML, CSS and JavaScript) in one file, with no frameworks and no build step
 - `sw.js`: a service worker that caches the app for offline use
-- `manifest.json` and `icon.svg`: let the app be added to an iPhone home screen
+- `manifest.json` and `icon.svg`: let the app be added to any phone's home screen
 
 Checkmarks and notes are saved only in each person's own browser. Nothing is sent to a server.
 

@@ -3,7 +3,7 @@
 ## What this is
 A mobile web app built for a group trip to Cartagena, Colombia (Aug 17–24, 2026). It has four sections: **Itinerary, Places, Guide, Essentials**, plus search across all content.
 
-**Key numbers (use these exactly, anywhere they come up, such as a README):** 23 people were on the trip, and 20 of them downloaded and used the app on their iPhones.
+**Key numbers (use these exactly, anywhere they come up, such as a README):** 23 people were on the trip, and 20 of them downloaded and used the app on their phones.
 
 This repository is a public portfolio version of that app. It will be published with GitHub Pages at https://jsutton-design.github.io/cartagena/.
 
